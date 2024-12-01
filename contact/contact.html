@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+
+  <link rel="icon" href="../Home/homeimage/paradise-road-logo.png">
+
+  <!--header icon link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+
+
+ <!--Header-->
+ <header>
+
+  <div id="menu-bar" class="fas fa-bars"></div>
+  <a href="../Home/home.html" class="logo"><span>Paradise Road </span></a>
+
+  <nav class="navbar">
+    <a href="../Home/home.html">Home</a>
+   <a href="../book/book.html">Book</a>
+   <a href="../search/search.html">Explore</a>
+   <a href="../gallery/gallery.html">Gallery</a>
+   <a href="../review/review.html">Review</a>
+   <a href="../contact/contact.html">Contact</a>
+</nav>
+
+<div class="icons">
+  <a href="../sign/sign.html" ><i class="fas fa-user" id="login-btn"></i></a>
+</div>
+
+     
+
+ </header>
+
+<!--Header End-->
+
+
+
+<!--contact-->
+<section class="contact">
+    <div class="content">
+      <h2>Contact Us - Paradise Road</h2>
+      <p>Welcome to visit Paradise Road Trip Pvt. Ltd. stay and search trip guidelines, tour packages, and best deal offers, top destinations sites in Myanmar and make your plan happen wherein we provide you best services. You can contact us by filling form and submit it or can directly email and phone contact details are given left side.</p>
+    </div>
+    <div class="container">
+      <div class="contactInfo">
+        <h1>Contact us for any quaries!</h1>
+        <div class="box">
+          <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>No. 1111 Parami Road Hlaing Tsp. <br> Yangon</p>
+            </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+ 91 9758900888, 11888, 22888</p>
+            </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+            <div class="text">
+              <h3>Mobile Phone</h3>
+              <p>+959-773849374, +959-773849375</p>
+            </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>paradiseroadtravels@gmail.com</p>
+            </div>
+        </div>
+          
+        </div>
+        <div class="contactForm">
+          <form>
+            <h2>Send Message</h2>
+            <div class="inputBox">             
+              <input type="text" name="" required id="contactN" placeholder="Full Name"> 
+              <label id="invalidCN" style="color: red; visibility: hidden;"></label>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" pattern="[\w]{9,}.@gmail.com" required placeholder="Email" id="contactE">
+              <label id="invalidCE" style="color: red; visibility: hidden;"></label>
+            </div>
+            <div class="inputBox">
+              <input type="tel" name="" required placeholder="Phone Number" id="contactT">
+              <label id="invalidCT" style="color: red; visibility: hidden;" ></label>
+            </div>
+            <div class="inputBox">
+              <textarea name="" required placeholder="type your message"></textarea> 
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" value="Send" onclick="contactValid()">
+            </div>
+          </form>
+        </div>
+      </div>
+    <div class="contactbot">
+      <h2 class="txt">Connect with us</h2>
+      <div class="sci">
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.twitter.com"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.discord.com"  target="_blank"><i class="fa-brands fa-discord"></i></a>
+    </div>
+
+
+  </section>
+
+<!-- contact section ends -->
+
+
+
+  <!-- brand slider section starts -->
+
+  <section class="brand-container">
+    
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="contactimage/b1.jfif" alt="b1" class="brandimg"></div>
+        <div class="swiper-slide"><img src="contactimage/b2.png" alt="b2" class="brandimg"></div>
+        <div class="swiper-slide"><img src="contactimage/b3.png" alt="b3" class="brandimg"></div>
+        <div class="swiper-slide"><img src="contactimage/b4.png" alt="b4" class="brandimg"></div>
+        <div class="swiper-slide"><img src="contactimage/b5.jpg" alt="b5" class="brandimg"></div>
+        <div class="swiper-slide"><img src="contactimage/b6.png" alt="b6" class="brandimg"></div>
+        <div class="swiper-slide"><img src="contactimage/b7.jpg" alt="b6" class="brandimg"></div>
+        <div class="swiper-slide"><img src="contactimage/b8.png" alt="b6" class="brandimg"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="box-container">
+        
+        <div class="box">
+            <h3>Available locations</h3>
+            <p>India</p>
+            <p>USA</p>
+            <p>Japan</p>
+            <p>France</p>
+            <p>Germany</p>
+            <p>Italy</p>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="../Home/test.html">Home</a>
+           <a href="../book/book.html">Book</a>
+           <a href="../search/search.html">Explore</a>
+           <a href="../gallery/gallery.html">Gallery</a>
+           <a href="../review/review.html">Review</a>
+           <a href="../contact/contact.html">Contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a herf="#">facebook</a>
+            <a herf="#">instagram</a>
+            <a herf="#">twitter</a>
+            <a herf="#">linkedin</a>
+        </div>
+    </div>
+
+    <h1 class="credit">Copyright <span> &copy; 2023 Paradise Road</span> | all rights reserved! </h1>
+</section>
+
+
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- brand slider section ends -->
+
+
+
+<script src="contact.js"></script>
+<script src="../Home/home.js"></script> 
+</body>
+</html>

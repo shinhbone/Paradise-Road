@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking</title>
+  <link rel="stylesheet"  href="book.css">
+  <link rel="icon" href="../Home/homeimage/paradise-road-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body onload="booktologin()">
+ <!--Header-->
+ <header>
+
+  <div id="menu-bar" class="fas fa-bars"></div>
+  <a href="../Home/home.html" class="logo"><span>Paradise Road </span></a>
+
+  <nav class="navbar">
+    <a href="../Home/home.html">Home</a>
+   <a href="../book/book.html">Book</a>
+   <a href="../search/search.html">Explore</a>
+   <a href="../gallery/gallery.html">Gallery</a>
+   <a href="../review/review.html">Review</a>
+   <a href="../contact/contact.html">Contact</a>
+</nav>
+
+<div class="icons">
+  <a href="../sign/sign.html" ><i class="fas fa-user" id="login-btn"></i></a>
+</div>
+
+     
+
+ </header>
+
+<!--Header End-->
+
+<section>
+  <div class="container">
+    <form class="form-group" id="bookingForm">
+        <h1 class="text-center text-white-50 mb-3">Booking Form</h1>
+        <div id="form">
+            <h3 class="text-white">Booking Details</h3>
+            <div id="input">
+                <input type="text" placeholder="From" name="From" required>
+                <select style="background: cornflowerblue" name="city" required>
+                    <option value="New York">New York</option>
+                    <option value="Seoul">Seoul</option>
+            <option value="Paris">Paris</option>
+            <option value="Rome">Rome</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Cario">Cario</option>
+            <option value="Cape Town">Cape Town</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Montreal">Montreal</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Sao Paulo">Sao Paulo</option>
+            <option value="Luanda">Luanda</option>
+            <option value="New Delhi">New Delhi</option>
+          </select>
+          <input type="date" placeholder="Departure Date" required>
+                        <input type="time" placeholder="Departure Time" required>
+                        <select style="background: cornflowerblue" name="transport" required>
+                            <option value="Plane">Plane</option>
+                            <option value="Bus">Bus</option>
+                            <option value="Cruise">Cruise</option>
+                            <option value="Train">Train</option>
+                        </select>
+                        <select style="background: cornflowerblue" name='seating' required oninput="calculatePrice()">
+                            <option value="Economy Class">Economy Class</option>
+                            <option value="Business Class">Business Class</option>
+                            <option value="First Class">First Class</option>
+                        </select>
+                    </div>
+
+        <div id="input2">
+          <input type="number" placeholder="Adult" max="30" min="0" name='adult' oninput="calculatePrice()">
+          <input type="number" placeholder="Children (2-11 years)" max="20" min="0" name='children' oninput="calculatePrice()">
+          <input type="number" placeholder="Infant (under 2 years)" max="10" min="0" name='infant' oninput="calculatePrice()">
+      </div>
+      <div id="input3">
+          <span class="text-primary" style="color: #fff;">Select Your Fare</span>
+          <input type="radio" name="fare" checked="checked">
+          <label class="text-white" for="input-group">One Way</label>
+          <input type="radio" name="fare">
+          <label class="text-white" for="input-group">Round Trip</label>
+      </div>
+      <div id="input4">
+          <input type="date" placeholder="Return Date" required>
+          <input type="time" placeholder="Return Time" required>
+          <input type="text" placeholder="Any Message" required>
+      </div>
+      <label id="price" name="price" style="margin-left: 280px; color: green; 
+      visibility: hidden; background-color: #8FC1E3; color: #666; font-weight: bolder;
+      border-radius: 20px; padding: 5px 20px; margin-top: 10px;"></label> <br>
+      <div id="input5">
+        <h3 class="text-white">Personal Details</h3>
+      </div>
+      <div id="input6">
+          <input type="text" placeholder="Full Name" name="fullname" required>
+          <label id="invalid" style="color: red; visibility: hidden;"></label><br>
+          <input type="text" placeholder="Phone Number" name="phonenumber" required>
+          <label id="invalidP" style="color: red; visibility: hidden;"></label><br>
+          <input type="email" placeholder="Email" name="emailV" required>
+          <label id="invalidE" style="color: red; visibility: hidden;"></label><br>
+      </div>
+      <button type="button" onclick="validate()">Submit</button>
+      <button type="reset" class="btn btn-primary text-white">Clear Form</button>
+  </div>
+    </form> <!-- form -->
+  </div><!-- container -->
+</section>
+
+<section class="footer">
+  <div class="box-container">
+      
+      <div class="box">
+          <h3>Available locations</h3>
+          <p>India</p>
+          <p>USA</p>
+          <p>Japan</p>
+          <p>France</p>
+          <p>Germany</p>
+          <p>Italy</p>
+      </div>
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="../Home/test.html">Home</a>
+         <a href="../book/book.html">Book</a>
+         <a href="../search/search.html">Explore</a>
+         <a href="../gallery/gallery.html">Gallery</a>
+         <a href="../review/review.html">Review</a>
+         <a href="../contact/contact.html">Contact</a>
+      </div>
+      <div class="box">
+          <h3>follow us</h3>
+          <a herf="#">facebook</a>
+          <a herf="#">instagram</a>
+          <a herf="#">twitter</a>
+          <a herf="#">linkedin</a>
+      </div>
+  </div>
+
+  <h1 class="credit">Copyright <span> &copy; 2023 Paradise Road</span> | all rights reserved! </h1>
+</section>
+<script src="../Home/home.js"></script>
+</body>
+</html>

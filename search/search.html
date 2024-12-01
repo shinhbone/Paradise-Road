@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="search.css" />
+    <link rel="icon" href="../Home/homeimage/paradise-road-logo.png">
+  </head>
+ 
+
+
+  <body>
+  
+ <!--Header-->
+ <header>
+
+  <div id="menu-bar" class="fas fa-bars"></div>
+  <a href="../Home/home.html" class="logo"><span>Paradise Road </span></a>
+  <nav class="navbar">
+      <a href="../Home/home.html">Home</a>
+      <a href="../book/book.html">Book</a>
+      <a href="../search/search.html">Explore</a>
+      <a href="../gallery/gallery.html">Gallery</a>
+      <a href="../review/review.html">Review</a>
+      <a href="../contact/contact.html">Contact</a>
+     </nav>
+
+     <div class="icons">
+      <a href="../sign/sign.html" ><i class="fas fa-user" id="login-btn"></i></a>
+   </div>
+     
+
+ </header>
+
+
+
+  <section>
+    <div class="wrapper">
+      <div id="search-container">
+        <input type="search" id="search-input" placeholder="Search a city here.." pattern="[a-z]{10}" maxlength="15">
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value active" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('North-America')">
+          North-America
+        </button>
+        <button class="button-value" onclick="filterProduct('South-America')">
+          South-America
+        </button>
+        <button class="button-value" onclick="filterProduct('Asia')">
+          Asia
+        </button>
+        <button class="button-value" onclick="filterProduct('Europe')">
+          Europe
+        </button>
+        <button class="button-value" onclick="filterProduct('Africa')">
+          Africa
+        </button>
+        
+      </div>
+      <div id="products">
+
+    </div>
+    
+    
+    
+    </div>
+    <div class="notFound">
+      <p>Invaild results. Try searching a different city.</p>
+    </div>
+   
+  </section>
+
+
+
+
+   <!--packages start-->
+   <section class="packages">
+    <h1 class="heading">
+        <span>H</span>
+        <span>o</span>
+        <span>w</span>
+        <span>'s</span>
+        <span>a</span>
+        <span>b</span>
+        <span>o</span>
+        <span>u</span>
+        <span>t</span>
+        <span>?</span>
+    </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="../package/packageimage/msg5958717659-14275.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Berlin </h3>
+                <p>Berlin is the capital and largest city of Germany.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="../book/book.html" class="btn">Book Now!</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../package/packageimage/msg5958717659-14271.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Tokyo </h3>
+                <p>Tokyo is the capital and most populous city of Japan.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="../book/book.html" class="btn">Book Now!</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../package/packageimage/msg5958717659-14270.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Seoul </h3>
+                <p>Seoul is the capital of the Republic of South Korea.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="../book/book.html" class="btn">Book Now!</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../package/packageimage/msg5958717659-14273.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Paris </h3>
+                <p>Paris is the capital of France.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="../book/book.html" class="btn">Book Now!</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../package/packageimage/msg5958717659-14274.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Rome </h3>
+                <p>Rome is the capital of Italy.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="../book/book.html" class="btn">Book Now!</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../package/packageimage/photo1691637626.jpeg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> New York </h3>
+                <p>New York City was the capital of the United States.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="../book/book.html" class="btn">Book Now!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="footer">
+  <div class="box-container">
+      
+      <div class="box">
+          <h3>Available locations</h3>
+          <p>India</p>
+          <p>USA</p>
+          <p>Japan</p>
+          <p>France</p>
+          <p>Germany</p>
+          <p>Italy</p>
+      </div>
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="../Home/home.html">Home</a>
+         <a href="../book/book.html">Book</a>
+         <a href="../search/search.html">Explore</a>
+         <a href="../gallery/gallery.html">Gallery</a>
+         <a href="../review/review.html">Review</a>
+         <a href="../contact/contact.html">Contact</a>
+      </div>
+      <div class="box">
+          <h3>follow us</h3>
+          <a herf="#">facebook</a>
+          <a herf="#">instagram</a>
+          <a herf="#">twitter</a>
+          <a herf="#">linkedin</a>
+      </div>
+  </div>
+
+  <h1 class="credit">Copyright <span> &copy; 2023 Paradise Road</span> | all rights reserved! </h1>
+</section>
+    
+    <!-- Script -->
+
+
+    <script src="http://listjs.com/no-cdn/list.js"></script> 
+    <script src="http://listjs.com/no-cdn/list.pagination.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="search.js"></script>
+    <script src="../Home/home.js"></script>
+
+
+
+
+
+</body>
+</html>
